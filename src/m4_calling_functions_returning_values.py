@@ -91,6 +91,7 @@ def run_test_sum_of_digits():
     print('Test 4 expected:', expected)
     print('       actual: ', answer)
 
+
 def sum_of_digits(number):
     """
     What comes in:  An integer.
@@ -159,12 +160,10 @@ def run_test_digits_in_cube():
     print('Test 1 expected:', expected)
     print('       actual:  ', answer)
 
-
     expected = 1
     answer = digits_in_cube(1)
     print('Test 2 expected:', expected)
     print('       actual:  ', answer)
-
 
     expected = 8
     answer = digits_in_cube(2)
@@ -209,7 +208,7 @@ def run_test_digits_in_power():
     print('Testing the   digits_in_power   function:')
     print('--------------------------------------------------')
 
- # Test 1:
+    # Test 1:
     expected = 7
     answer = digits_in_power(2, 4)
     print('Test 1 expected:', expected)
@@ -226,6 +225,7 @@ def run_test_digits_in_power():
     answer = digits_in_power(7, 2)
     print('Test 1 expected:', expected)
     print('       actual:  ', answer)
+
 
 def digits_in_power(n, k):
     """
@@ -248,7 +248,6 @@ def digits_in_power(n, k):
     # -------------------------------------------------------------------------
     x = n ** k
     return sum_of_digits(x)
-
 
 
 def run_test_fancy_sums_of_digits():
@@ -286,12 +285,12 @@ def run_test_fancy_sums_of_digits():
 
 
 # -------------------------------------------------------------------------
-    # HINT:  For your 1st test, consider  n=10.  Figure out BY HAND
-    # the correct (expected) answer for that test case.  (It's easy.)
-    # The doc-string below gives test cases you can use for
-    # your 2nd and 3rd tests but READ THOSE TEST CASES CAREFULLY
-    # in the doc-string to be sure that you understand the specification.
-    # -------------------------------------------------------------------------
+# HINT:  For your 1st test, consider  n=10.  Figure out BY HAND
+# the correct (expected) answer for that test case.  (It's easy.)
+# The doc-string below gives test cases you can use for
+# your 2nd and 3rd tests but READ THOSE TEST CASES CAREFULLY
+# in the doc-string to be sure that you understand the specification.
+# -------------------------------------------------------------------------
 
 
 def fancy_sums_of_digits(n):
